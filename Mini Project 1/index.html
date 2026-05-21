@@ -75,6 +75,78 @@
 
         <section id="dang-ky">
             <h2>Cổng đăng ký đội thi</h2>
+            <form action="#" method="POST" id="registration-form">
+                <fieldset>
+                    <legend>Thông tin đăng ký</legend>
+
+                    <div class="form-group">
+                        <label for="team-name">Tên đội thi:</label>
+                        <input type="text" id="team-name" name="teamName" required placeholder="Nhập tên đội của bạn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="leader-email">Email Trưởng nhóm:</label>
+                        <input type="email" id="leader-email" name="leaderEmail" required placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="member-count">Số lượng thành viên (200.000đ / người):</label>
+                        <input type="number" id="member-count" name="memberCount" min="1" max="5" value="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ưu đãi thời gian:</label>
+                        <div class="option-item">
+                            <input type="checkbox" id="early-bird" name="earlyBird">
+                            <label for="early-bird">Đăng ký sớm - Early Bird (Giảm 20%)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bảng thi đấu:</label>
+                        <div class="option-group">
+                            <div class="option-item">
+                                <input type="radio" id="bang-a" name="bangkhoichon" value="A" checked>
+                                <label for="bang-a">Bảng A (Đã có kinh nghiệm)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="radio" id="bang-b" name="bangkhoichon" value="B">
+                                <label for="bang-b">Bảng B (Newbie / Học viên)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kỹ năng hiện có của đội:</label>
+                        <div class="option-group">
+                            <div class="option-item">
+                                <input type="checkbox" id="skill-html" name="skills" value="HTML">
+                                <label for="skill-html">HTML/CSS</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="skill-js" name="skills" value="JS">
+                                <label for="skill-js">JavaScript</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="skill-design" name="skills" value="Design">
+                                <label for="skill-design">UI/UX Design</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promo-code">Mã khuyến mãi (Nhập <span style="color: #2563eb; font-weight:600;">TECHBUGS10</span> giảm thêm 10%):</label>
+                        <input type="text" id="promo-code" name="promoCode" placeholder="Ví dụ: TECHBUGS10">
+                    </div>
+
+                    <div class="fee-box">
+                        <span>Tổng chi phí tạm tính:</span>
+                        <div><span id="total-fee" class="highlight">200,000</span> <span style="font-weight:600; color:#2563eb;">VNĐ</span></div>
+                    </div>
+
+                    <button type="submit">Xác nhận đăng ký</button>
+                </fieldset>
+            </form>
         </section>
     </main>
 
