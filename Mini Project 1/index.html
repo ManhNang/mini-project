@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBugs Hackathon 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TechBugs Hackathon 2026</h1>
+        <p>Cuộc thi lập trình đột phá dành cho các chiến binh công nghệ</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#trang-chu">Trang chủ</a></li>
+            <li><a href="#lich-trinh">Lịch trình</a></li>
+            <li><a href="#dang-ky">Đăng ký</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="trang-chu">
+            <h2>Giới thiệu sự kiện</h2>
+            <p>Chào mừng bạn đến với TechBugs Hackathon. Nơi biến những ý tưởng táo bạo thành sản phẩm thực tế trong 48 giờ liên tục.</p>
+        </section>
+
+        <section id="lich-trinh">
+            <h2>Lịch trình sự kiện (2 Ngày)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Khung giờ</th>
+                        <th>Sự kiện công việc</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><strong>Ngày 1</strong></td>
+                        <td>08:00 - 09:00</td>
+                        <td>Khai mạc & Công bố đề bài</td>
+                    </tr>
+                    <tr>
+                        <td>09:00 - 12:00</td>
+                        <td>Các đội bắt đầu làm việc & Code tập trung</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 17:00</td>
+                        <td>Mentoring Session 1 (Hỗ trợ kỹ thuật)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center; background-color: #eff6ff; font-weight: 600; color: #1d4ed8;">
+                            ĐÊM HACKING KHÔNG NGỦ - HỖ TRỢ ĐỒ ĂN NHẸ TẠI PHÒNG LAB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"><strong>Ngày 2</strong></td>
+                        <td>08:00 - 11:30</td>
+                        <td>Hoàn thiện sản phẩm & Nộp bài</td>
+                    </tr>
+                    <tr>
+                        <td>13:00 - 16:00</td>
+                        <td>Demo sản phẩm trước Hội đồng Ban giám khảo</td>
+                    </tr>
+                    <tr>
+                        <td>16:30 - 18:00</td>
+                        <td>Bế mạc & Trao giải thưởng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="dang-ky">
+            <h2>Cổng đăng ký đội thi</h2>
+            <form action="#" method="POST" id="registration-form">
+                <fieldset>
+                    <legend>Thông tin đăng ký</legend>
+
+                    <div class="form-group">
+                        <label for="team-name">Tên đội thi:</label>
+                        <input type="text" id="team-name" name="teamName" required placeholder="Nhập tên đội của bạn">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="leader-email">Email Trưởng nhóm:</label>
+                        <input type="email" id="leader-email" name="leaderEmail" required placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="member-count">Số lượng thành viên (200.000đ / người):</label>
+                        <input type="number" id="member-count" name="memberCount" min="1" max="5" value="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ưu đãi thời gian:</label>
+                        <div class="option-item">
+                            <input type="checkbox" id="early-bird" name="earlyBird">
+                            <label for="early-bird">Đăng ký sớm - Early Bird (Giảm 20%)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Bảng thi đấu:</label>
+                        <div class="option-group">
+                            <div class="option-item">
+                                <input type="radio" id="bang-a" name="bangkhoichon" value="A" checked>
+                                <label for="bang-a">Bảng A (Đã có kinh nghiệm)</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="radio" id="bang-b" name="bangkhoichon" value="B">
+                                <label for="bang-b">Bảng B (Newbie / Học viên)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kỹ năng hiện có của đội:</label>
+                        <div class="option-group">
+                            <div class="option-item">
+                                <input type="checkbox" id="skill-html" name="skills" value="HTML">
+                                <label for="skill-html">HTML/CSS</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="skill-js" name="skills" value="JS">
+                                <label for="skill-js">JavaScript</label>
+                            </div>
+                            <div class="option-item">
+                                <input type="checkbox" id="skill-design" name="skills" value="Design">
+                                <label for="skill-design">UI/UX Design</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promo-code">Mã khuyến mãi (Nhập <span style="color: #2563eb; font-weight:600;">TECHBUGS10</span> giảm thêm 10%):</label>
+                        <input type="text" id="promo-code" name="promoCode" placeholder="Ví dụ: TECHBUGS10">
+                    </div>
+
+                    <div class="fee-box">
+                        <span>Tổng chi phí tạm tính:</span>
+                        <div><span id="total-fee" class="highlight">200,000</span> <span style="font-weight:600; color:#2563eb;">VNĐ</span></div>
+                    </div>
+
+                    <button type="submit">Xác nhận đăng ký</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-box">
+            <div class="modal-icon">✓</div>
+            <h3>Đăng ký thành công!</h3>
+            <p>Thông tin của đội thi đã được ghi nhận vào hệ thống Hackathon TechBugs 2026. Ban tổ chức sẽ sớm gửi email xác nhận chi tiết đến Trưởng nhóm.</p>
+            <button class="modal-close-btn" id="close-modal-btn">Đóng</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tổ chức Công nghệ TechBugs. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src=""></script>
+</body>
+</html>
